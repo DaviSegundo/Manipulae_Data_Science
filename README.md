@@ -12,21 +12,35 @@ Houve um processo de feature engineering para criação de novas variáveis que 
 
 Foram usados dois modelos para o processo de aprendizagem, os quais foram o GradientBoosting e CatBoosting. Assim, no final foi feito um ensemble entre os dois modelos para aprimorar mais ainda a predição. Para chegar no melhor resultado de cada modelo houve um processo de GridSearch para encontrar os melhores parâmetros.
 
+<p align='center'>
+<img src='./docs/dispersao_ens.png' height=400>
+</p>
+
+
 ### Validação
 
-Os resultados obtidos foram constantemente incrementados ao longo do estudo dos dados, chegando a mais de 90% de R2_Score, por exemplo. Alguns resultados bem interessantes também foram observados fazendo um avaliação de algumas faixas de valores específicas, como um Erro médio absoluto de aproximadamente R$ 3.00.
+Os resultados obtidos foram constantemente incrementados ao longo do estudo dos dados, chegando a mais de 90% de R2_Score, por exemplo. Alguns resultados bem interessantes também foram observados fazendo um avaliação de algumas faixas de valores específicas, como um Erro médio absoluto de aproximadamente R$ 3.00. Mas os seguintes resultados foram obtidos para o conjunto total dos dados:
+
+<p align='center'>
+<img src='./docs/metrics.png' height=100>
+</p>
 
 ## Métricas de avaliação
+- R2_Score
+- MSE
+- RMSE
+- MAE
+- MAPE
 
-$$R^2=1-\frac{\textrm{Variância Residual}}{Variância Total}$$
-$\\$
-$$MSE=\frac{1}{n}\sum_{i=1}^{n}(\hat{y}-y)^2$$
-$\\$
-$$MAE=\frac{1}{n}\sum_{i=1}^{n}|\hat{y}-y|$$
-$\\$
-$$RMSE=\sqrt{\frac{1}{n}\sum_{i=1}^{n}(\hat{y}-y)^2}$$
-$\\$
-$$MAPE=\frac{1}{n}\sum_{i=1}^{n}|\frac{y-\hat{y}|}{y}$$
+Como foi supracitado, para algumas faixas de valores os resultados são ainda melhores, nesse caso, temos a faixa de 30 a 400 reais, onde as métricas são ainda mais precisas.
 
+<p align='center'>
+<img src='./docs/me.png' height=80>
+</p>
+
+## Dashboard do Dataset
+<p align='center'>
+<img src='./docs/dashboard.png' height=400>
+</p>
 
 
